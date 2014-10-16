@@ -20,8 +20,8 @@ package com.gavin.game.view
 			//横线
 			for (var i:int = 0; i <= gridNum; i++)
 			{
-				this.graphics.beginFill(0xFFFFFF);
-				this.graphics.lineStyle(SPACE, 0xFFFFFF);
+				this.graphics.beginFill(0xBBADA0);
+				this.graphics.lineStyle(SPACE, 0xBBADA0);
 				var pointX:int = Cell.cellSize * i + SPACE * (i - 1) + SPACE * 0.5 + 124;
 				this.graphics.moveTo(0, pointX);
 				this.graphics.lineTo(gridWidth, pointX);
@@ -29,8 +29,8 @@ package com.gavin.game.view
 			//竖线
 			for (i = 1; i < gridNum; i++)
 			{
-				this.graphics.beginFill(0xFFFFFF);
-				this.graphics.lineStyle(SPACE, 0xFFFFFF);
+				this.graphics.beginFill(0xBBADA0);
+				this.graphics.lineStyle(SPACE, 0xBBADA0);
 				var pointY:int = Cell.cellSize * i + SPACE * (i - 1) + SPACE * 0.5;
 				this.graphics.moveTo(pointY, 124);
 				this.graphics.lineTo(pointY, gridHeight);
@@ -69,7 +69,7 @@ package com.gavin.game.view
 		private var _GridData:Vector.<Cell>;
 
 		public static var gridNum:int = 4;
-		private const SPACE:int = 5;
+		private const SPACE:int = 16;
 
 		public var tweening:Boolean;
 

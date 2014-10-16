@@ -43,7 +43,7 @@ package
 
 		private function initView():void
 		{
-			this.graphics.beginFill(0x999999);
+			this.graphics.beginFill(0xBBADA0);
 			this.graphics.drawRect(0, 0, 640, 1136);
 			this.graphics.endFill();
 			this.addChild(Grid.getInstance());
